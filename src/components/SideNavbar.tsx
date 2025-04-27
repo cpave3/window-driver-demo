@@ -40,7 +40,7 @@ function SideNavbar({ currentPage, setCurrentPage }: SideNavbarProps) {
         ))}
       </ul>
 
-      <div className="absolute bottom-5 left-5 right-5">
+      <div className="absolute bottom-5 left-5 right-5" data-testid="navtype">
         <div className="text-sm text-gray-400">
           <p>Side Navbar (Version 1)</p>
         </div>

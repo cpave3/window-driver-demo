@@ -113,7 +113,7 @@ function TopNavbar({ currentPage, setCurrentPage }: TopNavbarProps) {
             </div>
 
             {/* Version indicator */}
-            <div className="text-sm mr-4">
+            <div className="text-sm mr-4" data-testid="navtype">
               <p>Top Navbar (V2)</p>
             </div>
 

@@ -26,7 +26,7 @@ function App() {
 
   // State for the navbar version (1 = side nav, 2 = top nav)
   // NOTE: change navbar here
-  const [navbarVersion, setNavbarVersion] = useState(1);
+  const [navbarVersion, setNavbarVersion] = useState(2);
 
   // Function to add a new todo
   const addTodo = (text: string) => {

@@ -90,6 +90,7 @@ function TodoListPage({
                 <button
                   onClick={() => deleteTodo(todo.id)}
                   className="text-red-500 hover:text-red-700"
+                  aria-label="Delete"
                   data-testid={`delete-todo-${todo.id}`}
                 >
                   <Trash2 size={18} />
