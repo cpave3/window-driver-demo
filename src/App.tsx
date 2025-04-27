@@ -25,6 +25,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
   // State for the navbar version (1 = side nav, 2 = top nav)
+  // NOTE: change navbar here
   const [navbarVersion, setNavbarVersion] = useState(1);
 
   // Function to add a new todo
@@ -77,15 +78,15 @@ function App() {
   return (
     <div className="flex h-screen w-screen bg-gray-100">
       {/* Toggle navbar version button */}
-      <div className="absolute top-2 right-2 z-50">
-        <button
-          onClick={() => setNavbarVersion(navbarVersion === 1 ? 2 : 1)}
-          className="text-white px-3 py-1 bg-blue-500 rounded hover:bg-blue-600"
-          data-testid="toggle-navbar"
-        >
-          Switch to {navbarVersion === 1 ? "Top" : "Side"} Navbar
-        </button>
-      </div>
+      {/* <div className="absolute top-2 right-2 z-50"> */}
+      {/*   <button */}
+      {/*     onClick={() => setNavbarVersion(navbarVersion === 1 ? 2 : 1)} */}
+      {/*     className="text-white px-3 py-1 bg-blue-500 rounded hover:bg-blue-600" */}
+      {/*     data-testid="toggle-navbar" */}
+      {/*   > */}
+      {/*     Switch to {navbarVersion === 1 ? "Top" : "Side"} Navbar */}
+      {/*   </button> */}
+      {/* </div> */}
 
       {/* Render the appropriate navbar based on version */}
       {navbarVersion === 1 ? (
