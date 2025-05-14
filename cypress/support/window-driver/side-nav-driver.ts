@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 // cypress/support/window-driver/nav-drivers.ts
 import { BaseDriver } from "./base-driver";
+import { INavDriver } from "./INavDriver";
 
 // Driver for the side navigation
 export class SideNavDriver extends BaseDriver implements INavDriver {

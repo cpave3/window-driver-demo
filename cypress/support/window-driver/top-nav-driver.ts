@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
-import { BaseDriver, INavDriver } from "./base-driver";
+import { BaseDriver } from "./base-driver";
+import { INavDriver } from "./INavDriver";
 
 // Driver for the top navigation
 export class TopNavDriver extends BaseDriver implements INavDriver {

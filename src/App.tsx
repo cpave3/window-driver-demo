@@ -6,7 +6,6 @@ import TodoListPage from "./pages/TodoListPage";
 import SettingsPage from "./pages/SettingsPage";
 import AboutPage from "./pages/AboutPage";
 
-// Define the Todo type
 export interface Todo {
   id: number;
   text: string;
@@ -26,7 +25,7 @@ function App() {
 
   // State for the navbar version (1 = side nav, 2 = top nav)
   // NOTE: change navbar here
-  const [navbarVersion, setNavbarVersion] = useState(2);
+  const [navbarVersion] = useState<1 | 2>(1);
 
   // Function to add a new todo
   const addTodo = (text: string) => {
@@ -42,8 +41,8 @@ function App() {
   const toggleTodo = (id: number) => {
     setTodos(
       todos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo,
-      ),
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      )
     );
   };
 
@@ -97,7 +96,9 @@ function App() {
 
       {/* Main content area */}
       <div
-        className={`full-width flex-grow p-6 ${navbarVersion === 1 ? "ml-64" : "mt-16"}`}
+        className={`full-width flex-grow p-6 ${
+          navbarVersion === 1 ? "ml-64" : "mt-16"
+        }`}
       >
         {renderPage()}
       </div>
